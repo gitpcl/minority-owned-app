@@ -10,9 +10,14 @@
   "dependencies": {
     "express": "^4.17.1",
     "nunjucks": "^3.2.1",
-    "sqlite3": "^4.2.0"
-  },
-  "devDependencies": {
+    "sqlite3": "^4.2.0",
     "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitpcl/sodelivery-app"
   }
 }
