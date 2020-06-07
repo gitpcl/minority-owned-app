@@ -1,3 +1,4 @@
+const port = process.env.PORT || 8080;
 const express = require("express")
 const server = express()
 
@@ -113,6 +114,5 @@ server.get("/search", (req, res) => {
 })
 
 // Turn on server
-let port = process.env.PORT || 8080;
-server.listen(8080)
+server.listen(5000)
 
