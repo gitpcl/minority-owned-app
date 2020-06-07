@@ -113,4 +113,6 @@ server.get("/search", (req, res) => {
 })
 
 // Turn on server
-server.listen(5000)
+let port = process.env.PORT || 8080;
+server.listen(8080)
+
