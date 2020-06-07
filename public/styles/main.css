@@ -1,0 +1,39 @@
+/*
+ *  sodelivery-app-website-beta 1.0.0
+ *  
+ *  http://www.pedroclopes.com
+ *  hello@pedroclopes.com
+ *  
+ *  Last update on: 06/07/2020
+ *  ©2020 Pedro Lopes. All rights reserved.
+ */
+ 
+:root {
+    --title-color: #255D8B;
+    --primary-color: #C40101;
+    --secundary-color:#255D8B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f0f5;
+    -webkit-font-smoothing: antialised;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}

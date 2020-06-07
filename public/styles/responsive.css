@@ -1,0 +1,404 @@
+/*
+ *  sodelivery-app-website-beta 1.0.0
+ *  
+ *  http://www.pedroclopes.com
+ *  hello@pedroclopes.com
+ *  
+ *  Last update on: 06/07/2020
+ *  ©2020 Pedro Lopes. All rights reserved.
+ */
+
+@media (max-width: 1000px) {
+    #page-home {
+        background-position-x: 90vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-results .cards img {
+        height: 250px;
+    }
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+    #page-create-point .field-group .field + .field {
+        margin-left: 0px;
+    }
+
+}
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 35vw;
+    }
+}
+
+@media (max-height: 760px) {
+    #page-home {
+        background-position-y: 100px;
+    }
+}
+
+/*Pixel 2, Pixel 2XL,*/
+@media (max-width: 414px) {
+
+    /*Index page*/
+    #page-home {
+        background-position-x: 10vw;
+        background-position-y: 5vw;
+    }
+
+    #page-home main h1 {
+        font-size: 30px;
+    }
+
+    #page-home main p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 24px;
+    }
+
+    #page-home main a{
+        width:70%;
+        height:60px;
+    }
+
+    #page-home main a strong {
+        font-size: 12px;
+    }
+
+    #page-home header a {
+        left: 130px;
+        transform: translateX(-20%);
+    }
+    
+    #page-home header a span {
+        padding: 10px;
+    }
+
+    /*Modal page*/
+    #modal .header h1 {
+        margin:auto;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #modal .header a {
+        width: 27px;
+        height: 27px;
+    }
+
+    #modal .content {
+        width: 250px;
+    }
+
+    /*Create Point page*/
+    form legend span {
+        position: fixed;
+    }
+
+    form button {
+        width: 245px;
+    }
+}
+
+/*Pixel 2, Pixel 2XL,*/
+@media (max-width: 411px) {
+
+    /*Index page*/
+    #page-home {
+        background-position-x: 10vw;
+        background-position-y: 5vw;
+    }
+
+    #page-home main h1 {
+        font-size: 30px;
+    }
+
+    #page-home main p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 24px;
+    }
+
+    #page-home main a{
+        width:70%;
+        height:60px;
+    }
+
+    #page-home main a strong {
+        font-size: 12px;
+    }
+
+    #page-home header a {
+        left: 130px;
+        transform: translateX(-30%);
+    }
+    
+    #page-home header a span {
+        padding: 10px;
+    }
+
+    /*Modal page*/
+    #modal .header h1 {
+        margin:auto;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #modal .header a {
+        width: 27px;
+        height: 27px;
+    }
+
+    #modal .content {
+        width: 250px;
+    }
+
+    /*Create Point page*/
+    form legend span {
+        position: fixed;
+    }
+}
+
+/*iPhone6/7/8, iPhone X*/
+@media (max-width: 375px) {
+
+    /*Index page*/
+    #page-home {
+        background-position-x: 10vw;
+        background-position-y: 10vw;
+    }
+
+    #page-home main h1 {
+        font-size: 30px;
+    }
+
+    #page-home main p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 24px;
+    }
+
+    #page-home main a{
+        width:70%;
+        height:60px;
+    }
+
+    #page-home main a strong {
+        font-size: 12px;
+    }
+
+    #page-home header a {
+        left: 130px;
+        transform: translateX(-30%);
+    }
+    
+    #page-home header a span {
+        padding: 10px;
+    }
+
+    /*Modal page*/
+    #modal .header h1 {
+        margin:auto;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #modal .header a {
+        width: 27px;
+        height: 27px;
+    }
+
+    #modal .content {
+        width: 250px;
+    }
+
+    /*Create Point page*/
+
+    form h1 {
+        font-size: 30px;
+    } 
+
+    form legend h2 {
+        font-size: 22px;
+    } 
+
+    form input, form select {
+        width:200px;
+
+        font-size:12px;
+    }
+    
+    form legend span {
+        position: fixed;
+    }
+
+    form button {
+        width: 200px;
+    }
+}
+
+/*MotoG4, GalaxyS5* */
+
+@media (max-width: 360px) {
+    /*Index page*/
+    #page-home {
+        background-position-x: 10vw;
+        background-position-y: 5vw;
+    }
+
+    #page-home main h1 {
+        font-size: 30px;
+    }
+
+    #page-home main p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 24px;
+    }
+
+    #page-home main a{
+        width:70%;
+        height:60px;
+    }
+
+    #page-home main a strong {
+        font-size: 12px;
+    }
+
+    #page-home header a {
+        left: 130px;
+        transform: translateX(-30%);
+    }
+    
+    #page-home header a span {
+        padding: 10px;
+    }
+
+    /*Modal page*/
+    #modal .header h1 {
+        margin:auto;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #modal .header a {
+        width: 27px;
+        height: 27px;
+    }
+
+    #modal .content {
+        width: 250px;
+    }
+
+    /*Create Point page*/
+
+    form h1 {
+        font-size: 30px;
+    }    
+
+    form legend span {
+        position: fixed;
+    }
+
+    form button {
+        width: 200px;
+    }
+}
+
+/*iPhone5/SE*/
+@media (max-width: 320px) {
+    /*Index page*/
+    #page-home {
+        background-position-x: 10vw;
+        background-position-y: 8vw;
+    }
+
+    #page-home main h1 {
+        font-size: 25px;
+    }
+
+    #page-home main p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 24px;
+    }
+
+    #page-home main a{
+        widows: 7px;0%;
+        height:40px;
+    }
+
+    #page-home main a strong {
+        font-size: 10px;
+    }
+
+    #page-home header a {
+        left: 130px;
+        transform: translateX(-30%);
+        font-size:12px;
+    }
+    
+    #page-home header a span {
+        padding: 10px;
+    }
+
+    /*Modal page*/
+    #modal .header h1 {
+        margin:auto;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #modal .header a {
+        width: 27px;
+        height: 27px;
+    }
+
+    #modal .content {
+        width: 250px;
+    }
+
+    /*Create Point page*/
+    form h1 {
+        font-size: 23px;
+    } 
+
+    form legend h2 {
+        font-size: 18px;
+    } 
+
+    form input, form select {
+        width:160px;
+
+        font-size:12px;
+    }
+    
+    form legend span {
+        position: fixed;
+    }
+
+    form button {
+        width: 160px;
+    }
+}

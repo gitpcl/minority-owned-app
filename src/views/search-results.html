@@ -1,0 +1,57 @@
+{# Import layout template #}
+{% extends "layout.html" %}
+
+{# import body id #}
+{% set pageId = "page-search-results" %}
+
+{# import page title #}
+{% block title %}
+    <title>Resultados da pesquisa</title>
+{% endblock title %}
+
+{# Import styles #}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{# Import index content #}
+{% block content %}
+    {% include "partials/page-header.html" %}
+    <main>
+
+        {# Import total/content with if condition#}
+        {% if total > 0 %}
+            <h4>
+                <strong>{{ total }} restaurante</strong>
+                encontrado
+            </h4>
+
+            <div class="cards">
+
+                {% for place in places %}
+
+                    <div class="card">
+                        <img src="{{ place.image }}" alt="{{ place.name }}">
+                        <h1>{{ place.name }}</h1>
+                        <h3>{{ place.item }}</h3>
+                        <p>
+                            {{ place.address }} {{ place.address2 }}<br>
+                            {{ place.address3 }}<br>
+                            {{ place.city }}, {{ place.state }}<br>
+                            <a href="{{ place.site }}">{{ place.site }}</a><br>
+                            <a href="mailto:{{ place.email }}">{{ place.email }}</a><br>
+                            Tel: <a href="tel:{{ place.phone }}">{{ place.phone }}</a><br>
+                            Siga no instagram: <a href="https://www.instagram.com/{{ place.social }}">@{{ place.social }}</a>
+                        </p>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+        {% else %}
+        <h4><strong>Nenhum</strong> restaurante encontrado</h4>
+        {% endif %}
+
+    </main>
+{% endblock content %}

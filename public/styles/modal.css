@@ -1,0 +1,114 @@
+#modal {
+    background-color: #0E0A14ef;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}
+
+#modal.hide {
+    display: none;
+}
+
+#modal .content {
+    color: white;
+
+    width: 495px;
+}
+
+/*
+ *  sodelivery-app-website-beta 1.0.0
+ *  
+ *  http://www.pedroclopes.com
+ *  hello@pedroclopes.com
+ *  
+ *  Last update on: 06/07/2020
+ *  ©2020 Pedro Lopes. All rights reserved.
+ */
+ 
+#modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 42px;
+}
+
+#modal .header a {
+    background-image: url("../assets/icones/x.svg");
+
+    width: 20px;
+    height:20px;
+
+    display: flex;
+
+    font-size: 0.01px;
+}
+
+#modal .header h1 {
+    color: white;
+
+    font-size: 30px;
+    line-height:42px;
+}
+
+#modal form label {
+    font-size: 14px;
+    line-height: 16px;
+
+    display: block;
+    margin-bottom: 8px;
+}
+
+#modal form .field {
+    display: flex;
+}
+
+#modal form select {
+    flex: 1;
+
+    background-color: #f0f0f5;
+
+    border-radius: 8px 0 0 8px;
+    border: 0;
+
+    padding: 16px 24px;
+
+    font-size: 16px;
+    color: #7889ca;
+}
+
+#modal form button {
+    width: 72px;
+    height: 72px;
+
+    background-color: var(--primary-color);
+
+    border: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+#modal form buttom:hover {
+    background-color: #7889ca;
+}
+
+/* For the modal point created && point error */
+#modal.point .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point h1 {
+    color: white;
+
+    margin-top: 32px;
+}

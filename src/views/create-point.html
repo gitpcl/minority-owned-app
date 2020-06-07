@@ -1,0 +1,210 @@
+{# Import layout template #}
+{% extends "layout.html" %}
+
+{# import body id #}
+{% set pageId = "page-create-point" %}
+
+{# import page title #}
+{% block title %}
+    <title>Registre o seu restaurante</title>
+{% endblock title %}
+
+{# Import styles #}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{# Import index content #}
+{% block content %}
+    {% include "partials/page-header.html" %}
+
+    <form action="/savepoint" method="POST">
+
+        <h1>Registre o seu restaurante</h1>
+
+        <fieldset>
+            <legend>
+                <h2>Informações do restaurante</h2>
+            </legend>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Nome do restaurante</label>
+                    <input type="text" name="name" required="required">
+                </div>
+                <div class="field">
+                    <label for="image">Imagem do restaurante</label>
+                    <input 
+                        type="url" 
+                        name="image" 
+                        placeholder="Link da imagem aqui com http://"
+                        required="required">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="address">Endereço</label>
+                    <input type="text" name="address" required="required">
+                </div>
+                <div class="field">
+                    <label for="address2">Número</label>
+                    <input type="text" name="address2" required="required">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="address3">Complemento</label>
+                    <input type="text" name="address3">
+                </div>
+                <div class="field">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" placeholder="XXXXX-XXX" required="required">
+                </div>
+            </div>
+
+            <div class="field-group">
+
+                <div class="field">
+                    <label for="city">Cidade</label>
+                    <select name="city" disabled="disabled" required="required">
+                        <option value="">Selecione a cidade</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="state">Estado</label>
+                    <select name="uf" required="required">
+                        <option value="">Selecione o estado</option>
+
+                        <input type="hidden" name="state">
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="site">Site</label>
+                <input type="text" name="site">
+                </div>
+                <div class="field">
+                    <label for="email">E-Mail</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="seuemail@suaempresa.com"
+                        required="required">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="phone">Telefone</label>
+                <input type="text" name="phone" placeholder="+67 (X)XXXX-XXXX" required="required">
+                </div>
+                <div class="field">
+                    <label for="social">Instagram</label>
+                    <input 
+                        type="text" 
+                        name="social" 
+                        placeholder="seu instagram sem o @">
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>Tipo de restaurante</h2>
+                <span>Selecione os tipos que se aplicam</span>
+            </legend>
+
+            <div class="items-grid">
+                <li data-id="asiatico">
+                    <img src="/assets/icones/asiatico.svg" alt="Asiatico">
+                    <span>Asiatico</span>
+                </li>
+                <li data-id="cafe">
+                    <img src="/assets/icones/cafe.svg" alt="Café">
+                    <span>Café</span>
+                </li>
+                <li data-id="doce">
+                    <img src="/assets/icones/doces.svg" alt="Doces">
+                    <span>Doces</span>
+                </li>
+                <li data-id="fastfood">
+                    <img src="/assets/icones/fast-food.svg" alt="Fast Food">
+                    <span>Fast Food</span>
+                </li>
+                <li data-id="saudavel">
+                    <img src="/assets/icones/saudavel.svg" alt="Saudavel">
+                    <span>Saudavel</span>
+                </li>
+                <li data-id="italiano">
+                    <img src="/assets/icones/italiano.svg" alt="Italiano">
+                    <span>Italiano</span>
+                </li>
+                <li data-id="japones">
+                    <img src="/assets/icones/japones.svg" alt="Japonês">
+                    <span>Japonês</span>
+                </li>
+                <li data-id="mediterraneo">
+                    <img src="/assets/icones/mediterraneo.svg" alt="Mediterraneo">
+                    <span>Mediterraneo</span>
+                </li>
+                <li data-id="hamburgueria">
+                    <img src="/assets/icones/hamburgueria.svg" alt="Hamburgueria">
+                    <span>Hamburgueria</span>
+                </li>
+                 <li data-id="pizza">
+                    <img src="/assets/icones/pizza.svg" alt="Pizzaria">
+                    <span>Pizzaria</span>
+                </li>
+                <li data-id="lanches">
+                    <img src="/assets/icones/lanches.svg" alt="Lanches">
+                    <span>Lanches</span>
+                </li>
+                <li data-id="frutosdomar">
+                    <img src="/assets/icones/frutos-do-mar.svg" alt="Frutos do Mar">
+                    <span>Frutos do Mar</span>
+                </li>
+                 <li data-id="mexicana">
+                    <img src="/assets/icones/mexicano.svg" alt="Mexicana">
+                    <span>Mexicano</span>
+                </li>
+                <li data-id="tradicional">
+                    <img src="/assets/icones/tradicional.svg" alt="Tradicional">
+                    <span>Tradicional</span>
+                </li>
+                <li data-id="vegetariana">
+                    <img src="/assets/icones/vegetariano.svg" alt="Vegetariana">
+                    <span>Vegetariano</span>
+                </li>
+                <li data-id="bar">
+                    <img src="/assets/icones/bar.svg" alt="Bar">
+                    <span>Bar</span>
+                </li>
+            </div>
+
+            <input type="hidden" name="items">
+        </fieldset>
+
+        <button type="submit">Registre o seu restaurante</button>
+    </form>
+
+{% endblock content %}
+
+{% block modal %}
+    {% if saved %}
+        {% include "partials/point-created.html"%}
+    
+    {% endif %}
+{% endblock modal %}
+
+{# import index script #}
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}

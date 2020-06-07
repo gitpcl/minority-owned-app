@@ -1,0 +1,44 @@
+{# Import layout template #}
+{% extends "layout.html" %}
+
+{# import body id #}
+{% set pageId = "page-home" %}
+
+{# Import styles #}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+
+    <link rel="shortcut icon" href="/assets/icones/favicon.jpg">
+    <link rel="apple-touch-icon" href="/assets/icones/favicon.png">
+{% endblock styles %}
+
+{# Import index content #}
+{% block content %}
+    <div class="content">
+        <header>
+            <img src="/assets/icones/logo.svg" alt="Houston Minority Owned Logo">
+            <a href="/create-point">
+                <span></span>Registre o seu restaurante</a>
+        </header>
+
+        <main>
+            <h1>Sua lista de restaurantes em Campo Grande</h1>
+            <p>Nós ajudamos pessoas a encontrarem <br>restaurantes que entregam em casa grátis</p>
+            <a href="#">
+                <span></span>
+                <strong>Procure um restaurante</strong>
+            </a>
+        </main>
+    </div>
+{% endblock content %}
+
+{# Import index modal #}
+{% block modal %}
+    {% include "partials/modal.html" %}
+{% endblock modal %}
+
+{# import index script #}
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
+{% endblock scripts %}
