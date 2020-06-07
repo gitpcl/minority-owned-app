@@ -113,5 +113,8 @@ server.get("/search", (req, res) => {
 })
 
 // Turn on server
-server.listen(5000)
+const PORT = process.env.PORT || 5000
+server.listen(PORT, () => {
+    console.log(`App server listening on PORT: ${PORT}`)
+} 
 
