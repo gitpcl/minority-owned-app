@@ -86,9 +86,9 @@ module.exports = db
     //     console.log(rows)
     // })
 
-    // // 4. Delete data from the table
-    // // if remove WHERE id = ? it removes everything
-    // db.run(`DELETE FROM places WHERE id = ?`, [17], function(err) { 
+    // 4. Delete data from the table
+    // if remove WHERE id = ? it removes everything
+    // db.run(`DELETE FROM places WHERE id = ?`, [25], function(err) { 
     //     if(err) {
     //         return console.log(err)
     //     }
@@ -97,7 +97,7 @@ module.exports = db
 
     // }) 
 
-    // // 5. Check if data was deleted
+    // 5. Check if data was deleted
     // db.all(`SELECT * FROM places`, function(err, rows) {
     //     if(err) {
     //         return console.log(err)
