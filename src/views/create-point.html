@@ -6,7 +6,7 @@
 
 {# import page title #}
 {% block title %}
-    <title>Registre o seu restaurante</title>
+    <title>Register your company</title>
 {% endblock title %}
 
 {# Import styles #}
@@ -21,63 +21,63 @@
 
     <form action="/savepoint" method="POST">
 
-        <h1>Registre o seu restaurante</h1>
+        <h1>Register your company</h1>
 
         <fieldset>
             <legend>
-                <h2>Informações do restaurante</h2>
+                <h2>Information about the company</h2>
             </legend>
 
             <div class="field-group">
                 <div class="field">
-                    <label for="name">Nome do restaurante</label>
+                    <label for="name">Company Name</label>
                     <input type="text" name="name" required="required">
                 </div>
                 <div class="field">
-                    <label for="image">Imagem do restaurante</label>
+                    <label for="image">Company Image</label>
                     <input 
                         type="url" 
                         name="image" 
-                        placeholder="Link da imagem aqui com http://"
+                        placeholder="Place image link here with http://"
                         required="required">
                 </div>
             </div>
 
             <div class="field-group">
                 <div class="field">
-                    <label for="address">Endereço</label>
+                    <label for="address">Address</label>
                     <input type="text" name="address" required="required">
                 </div>
                 <div class="field">
-                    <label for="address2">Número</label>
+                    <label for="address2">Address2</label>
                     <input type="text" name="address2" required="required">
                 </div>
             </div>
 
             <div class="field-group">
                 <div class="field">
-                    <label for="address3">Complemento</label>
+                    <label for="address3">Address3</label>
                     <input type="text" name="address3">
                 </div>
                 <div class="field">
-                    <label for="cep">CEP</label>
-                    <input type="text" name="cep" placeholder="XXXXX-XXX" required="required">
+                    <label for="cep">ZipCode</label>
+                    <input type="text" name="cep" placeholder="XXXXX" required="required">
                 </div>
             </div>
 
             <div class="field-group">
 
                 <div class="field">
-                    <label for="city">Cidade</label>
+                    <label for="city">City</label>
                     <select name="city" disabled="disabled" required="required">
-                        <option value="">Selecione a cidade</option>
+                        <option value="">Select a city</option>
                     </select>
                 </div>
 
                 <div class="field">
-                    <label for="state">Estado</label>
+                    <label for="state">State</label>
                     <select name="uf" required="required">
-                        <option value="">Selecione o estado</option>
+                        <option value="">Select a state</option>
 
                         <input type="hidden" name="state">
                     </select>
@@ -87,7 +87,7 @@
 
             <div class="field-group">
                 <div class="field">
-                    <label for="site">Site</label>
+                    <label for="site">Website</label>
                 <input type="text" name="site">
                 </div>
                 <div class="field">
@@ -95,14 +95,14 @@
                     <input 
                         type="email" 
                         name="email" 
-                        placeholder="seuemail@suaempresa.com"
+                        placeholder="Your business email here"
                         required="required">
                 </div>
             </div>
 
             <div class="field-group">
                 <div class="field">
-                    <label for="phone">Telefone</label>
+                    <label for="phone">Phone</label>
                 <input type="text" name="phone" placeholder="+67 (X)XXXX-XXXX" required="required">
                 </div>
                 <div class="field">
@@ -110,7 +110,7 @@
                     <input 
                         type="text" 
                         name="social" 
-                        placeholder="seu instagram sem o @">
+                        placeholder="Your instagram handle w/o @">
                 </div>
             </div>
 
@@ -118,85 +118,36 @@
 
         <fieldset>
             <legend>
-                <h2>Tipo de restaurante</h2>
-                <span>Selecione os tipos que se aplicam</span>
+                <h2>Company type</h2>
+                <span>Select all that apply</span>
             </legend>
 
-            <div class="items-grid">
-                <li data-id="asiatico">
-                    <img src="/assets/icones/asiatico.svg" alt="Asiatico">
-                    <span>Restaurante Asiático</span>
+                <li data-id="black-americans">
+                    <img src="/assets/icones/black-americans.svg" alt="Black Americans (African Descent)">
+                    <span>Black Americans (African Descent)</span>
                 </li>
-                <li data-id="cafe">
-                    <img src="/assets/icones/cafe.svg" alt="Café">
-                    <span>Café</span>
+                <li data-id="hispanic">
+                    <img src="/assets/icones/hispanic.svg" alt="Hispanic Americans">
+                    <span>Hispanic Americans</span>
                 </li>
-                <li data-id="doce">
-                    <img src="/assets/icones/doces.svg" alt="Doces">
-                    <span>Doces</span>
+                <li data-id="native">
+                    <img src="/assets/icones/native-americans.svg" alt="Native Americans">
+                    <span>Native Americans</span>
                 </li>
-                <li data-id="fastfood">
-                    <img src="/assets/icones/fast-food.svg" alt="Fast Food">
-                    <span>Fast Food</span>
+                <li data-id="asian-pacific">
+                    <img src="/assets/icones/asian-pacific.svg" alt="Asian Pacific Americans">
+                    <span>Asian Pacific Americans</span>
                 </li>
-                <li data-id="saudavel">
-                    <img src="/assets/icones/saudavel.svg" alt="Saudavel">
-                    <span>Restaurante Saudável</span>
-                </li>
-                <li data-id="italiano">
-                    <img src="/assets/icones/italiano.svg" alt="Italiano">
-                    <span>Restaurante Italiano</span>
-                </li>
-                <li data-id="japones">
-                    <img src="/assets/icones/japones.svg" alt="Japonês">
-                    <span>Restaurante Japonês</span>
-                </li>
-                <li data-id="mediterraneo">
-                    <img src="/assets/icones/mediterraneo.svg" alt="Mediterraneo">
-                    <span>Restaurante Mediterrâneo</span>
-                </li>
-                <li data-id="hamburgueria">
-                    <img src="/assets/icones/hamburgueria.svg" alt="Hamburgueria">
-                    <span>Hamburgueria</span>
-                </li>
-                 <li data-id="pizza">
-                    <img src="/assets/icones/pizza.svg" alt="Pizzaria">
-                    <span>Pizzaria</span>
-                </li>
-                <li data-id="lanches">
-                    <img src="/assets/icones/lanches.svg" alt="Lanches">
-                    <span>Lanches</span>
-                </li>
-                <li data-id="frutosdomar">
-                    <img src="/assets/icones/frutos-do-mar.svg" alt="Frutos do Mar">
-                    <span>Restaurante de Frutos do Mar</span>
-                </li>
-                 <li data-id="mexicana">
-                    <img src="/assets/icones/mexicano.svg" alt="Mexicana">
-                    <span>Restaurante Mexicano</span>
-                </li>
-                <li data-id="tradicional">
-                    <img src="/assets/icones/tradicional.svg" alt="Tradicional">
-                    <span>Tradicional</span>
-                </li>
-                <li data-id="vegetariana">
-                    <img src="/assets/icones/vegetariano.svg" alt="Vegetariana">
-                    <span>Restaurante Vegetariano</span>
-                </li>
-                <li data-id="bar">
-                    <img src="/assets/icones/bar.svg" alt="Bar">
-                    <span>Bar</span>
-                </li>
-                <li data-id="mercado">
-                    <img src="/assets/icones/mercado.svg" alt="Mercado">
-                    <span>Mercado</span>
+                <li data-id="sub-asian">
+                    <img src="/assets/icones/sub-asian.svg" alt="Subcontinent Asian Americans">
+                    <span>Subcontinent Asian Americans</span>
                 </li>
             </div>
 
             <input type="hidden" name="items">
         </fieldset>
 
-        <button type="submit">Registre a sua empresa</button>
+        <button type="submit">Register your company</button>
     </form>
 
 {% endblock content %}

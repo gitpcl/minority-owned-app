@@ -6,7 +6,7 @@
 
 {# import page title #}
 {% block title %}
-    <title>Resultados da pesquisa</title>
+    <title>Search results</title>
 {% endblock title %}
 
 {# Import styles #}
@@ -22,8 +22,7 @@
         {# Import total/content with if condition#}
         {% if total > 0 %}
             <h4>
-                <strong>{{ total }} empresa(s)</strong>
-                encontrada(s)
+                <strong>{{ total }} companies</strong> found
             </h4>
 
             <div class="cards">
@@ -50,7 +49,7 @@
             </div>
 
         {% else %}
-        <h4><strong>Nenhuma</strong> empresa encontrada</h4>
+        <h4><strong>No</strong> company found</h4>
         {% endif %}
 
     </main>

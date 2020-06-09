@@ -51,18 +51,18 @@ module.exports = db
     // `
     // const values = [
     //     "http://burgerco.com.br/wp-content/uploads/2013/07/IMG_8229-588x392.jpg",
-    //     "Hamburgueria Burger",
-    //     "Rua Antonio Maria Coelho",
-    //     "3463",
-    //     "Jd. dos Estados",
-    //     "Campo Grande",
-    //     "Mato Grosso do Sul",
-    //     "79020-210",
-    //     "http://burgerco.com.br/",
-    //     "sac@burgerco.com.br",
-    //     "+67 3042-9292",
-    //     "@hambugreriacg",
-    //     "Hamburger"
+    //     "Ate Kitchen",
+    //     "Times Blvd.",
+    //     "2445",
+    //     "",
+    //     "Houston",
+    //     "Texas",
+    //     "77005",
+    //     "http://www.bocagecatering.com/",
+    //     "",
+    //     "346-804-7208",
+    //     "ate_boutique_kitchen",
+    //     "Black Americans (African Decent)"
     // ]
 
     // function afterInsertData(err) {
