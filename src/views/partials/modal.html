@@ -9,11 +9,10 @@
             <div class="search field">
                 <select name="search">
                     <option value="" disabled selected hidden>Type</option>
-                    <option value="black-americans">Black Americans (African Decent)</A></option>
-                    <option value="hispanic">Hispanic Americans</option>
-                    <option value="native">Native Americans</option>
-                    <option value="asian-pacific">Asian Pacific Americans</option>
-                    <option value="sub-asian">Subcontinent Asian Americans</option>
+                    {# Import Houston CEPs #}
+                    {% block cep %}
+                        {% include "partials/houston-cep.html" %}
+                    {% endblock cep %}
                 </select>
                 <button>
                     <img src="/assets/icones/search.svg" alt="Search">
