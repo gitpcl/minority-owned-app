@@ -97,7 +97,7 @@ main .card h1 {
     color: var(--title-color);
 }
 
-main .card h3 {
+main .card h5 {
     margin-top: 1px;
 
     font-family: Roboto;
