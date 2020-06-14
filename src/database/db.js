@@ -50,8 +50,8 @@ module.exports = db
     // const values = [
     //     "http://burgerco.com.br/wp-content/uploads/2013/07/IMG_8229-588x392.jpg",
     //     "Ate Kitchen",
-    //     "Times Blvd.",
-    //     "2445",
+    //     "2445 Times Blvd.",
+    //     "",
     //     "Houston",
     //     "Texas",
     //     "77005",
