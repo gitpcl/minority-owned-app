@@ -6,7 +6,10 @@
         <meta name="author" content="Pedro Lopes">
 
         <!-- Primary Meta Tags -->
-        <title>Minority Owned Companies in Houston</title>
+        {% block title %}
+            <title>Houston Minority Owned</title>
+        {% endblock title %}
+
         <meta name="title" content="Minority Owned Companies in Houston">
         <meta name="description" content="This is a website that helps people find minority owned business in their area allowing them to connect and support that minority owned business.">
         
@@ -27,11 +30,6 @@
         <meta property="twitter:title" content="Houston Minority Owned">
         <meta property="twitter:description" content="This is a website that helps people find minority owned business in their area allowing them to connect and support that minority owned business.">
         <meta property="twitter:image" content="">
-
-        <!-- Title -->
-        {% block title %}
-            <title>Houston Minority Owned</title>
-        {% endblock title %}
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu&display=swap" rel="stylesheet">
