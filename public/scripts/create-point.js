@@ -49,25 +49,6 @@
 //     .querySelector("select[name=uf]")
 //     .addEventListener("change", getCities)
 
-//..................................//
-function populateCEPs() {
-    const cepSelect = document.querySelector('select[name=cep]')
-
-    let ceps = ['77002','77003', '77004']
-
-    cepSelect.addEventListener('click', () => {
-    let options = ceps.map(cep => `<options value=${cep()}>${cep}</options>`).join('\n');
-
-    cepSelect.innerHTML = options; 
-    })
-
-}
-
-populateCEPs()
-//..................................//
-
-//..................................//
-
 // Business type
 
 // Get all the li
