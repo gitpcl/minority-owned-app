@@ -58,6 +58,17 @@
     }
 }
 
+@media (max-width: 600px) {
+    .footer .inner-footer {
+        width:90%;
+    }
+
+    .inner-footer .logo-container, .inner-footer .footer-third {
+        width:100%;
+        margin-bottom:30px; 
+    }
+}
+
 /*Pixel 2, Pixel 2XL,*/
 @media (max-width: 414px) {
 
