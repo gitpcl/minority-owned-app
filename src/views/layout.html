@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Esse é um site que ajuda as pessoas a acharem empresas que fazem entrega em Campo Grande.">
         <meta name="author" content="Pedro Lopes">
 
+        <!-- Primary Meta Tags -->
+        <title>Minority Owned Companies in Houston</title>
+        <meta name="title" content="Minority Owned Companies in Houston">
+        <meta name="description" content="This is a website that helps people find minority owned business in their area allowing them to connect and support that minority owned business.">
+        
+        <!-- Other Tags -->
+        <meta name="robots" content="index, follow">
+        <meta name="revisit-after" content="15 days">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.houstonminorityowned.com/">
+        <meta property="og:title" content="Houston Minority Owned">
+        <meta property="og:description" content="This is a website that helps people find minority owned business in their area allowing them to connect and support that minority owned business.">
+        <meta property="og:image" content="">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="http://www.houstonminorityowned.com/">
+        <meta property="twitter:title" content="Houston Minority Owned">
+        <meta property="twitter:description" content="This is a website that helps people find minority owned business in their area allowing them to connect and support that minority owned business.">
+        <meta property="twitter:image" content="">
+
+        <!-- Title -->
         {% block title %}
             <title>Houston Minority Owned</title>
         {% endblock title %}
 
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles/main.css">
 
+        <!-- Styles -->
         {% block styles %}{% endblock styles %}
 
         <link rel="stylesheet" href="/styles/responsive.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169349634-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-169349634-1');
+        </script>
 
     </head>
     <body>
