@@ -19,7 +19,6 @@ module.exports = db
     //         name TEXT,
     //         address TEXT,
     //         address2 TEXT,
-    //         address3 TEXT,
     //         city TEXT,
     //         state TEXT,
     //         cep TEXT,
@@ -38,7 +37,6 @@ module.exports = db
     //         name,
     //         address,
     //         address2,
-    //         address3,
     //         city,
     //         state,
     //         cep,
@@ -47,14 +45,13 @@ module.exports = db
     //         phone,
     //         social,
     //         items
-    //     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);
+    //     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);
     // `
     // const values = [
     //     "http://burgerco.com.br/wp-content/uploads/2013/07/IMG_8229-588x392.jpg",
     //     "Ate Kitchen",
     //     "Times Blvd.",
     //     "2445",
-    //     "",
     //     "Houston",
     //     "Texas",
     //     "77005",
