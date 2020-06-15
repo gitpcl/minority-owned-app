@@ -1,0 +1,75 @@
+{# Import layout template #}
+{% extends "layout.html" %}
+
+{# import body id #}
+{% set pageId = "page-create-point" %}
+
+{# import page title #}
+{% block title %}
+    <title>Register your company</title>
+{% endblock title %}
+
+{# Import styles #}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{# Import index content #}
+{% block content %}
+    {% include "partials/page-header.html" %}
+
+    <form action="/savepoint" method="POST">
+
+        <h1>Project Partners</h1>
+
+        <fieldset>
+            <legend>
+                <h2>Project Founders</h2>
+                <span>made with ❤️ </span>
+            </legend>
+            <div class="items-grid">   
+                <li>
+                    <img src="/assets/icones/houstontips.svg" alt="HoustonTips Logo">
+                    <span><a href="https://www.instagram.com/houstontips" style="color:var(--primary-color);">@houstontips</a></span>
+                </li>
+                {# <li>
+                    <img src="/assets/icones/image.svg" alt="Become a partner">
+                    <span>Become a partner</span>
+                </li>
+                <li>
+                    <img src="/assets/icones/image.svg" alt="Become a partners">
+                    <span>Become a partner</span>
+                </li> #}
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>Partners</h2>
+                <span>Thank you for being a partner</span>
+            </legend>
+            <div class="items-grid">   
+                <li>
+                    <img src="/assets/icones/partner.svg" alt="Become a partner">
+                    <span><a href="mailto:pl@houstontips.us" style="color:var(--primary-color);">Become a Partner</a></span>
+                </li>
+                <li>
+                    <img src="/assets/icones/partner.svg" alt="Become a partner">
+                    <span><a href="mailto:pl@houstontips.us" style="color:var(--primary-color);">Become a Partner</a></span>
+                </li>
+                <li>
+                    <img src="/assets/icones/partner.svg" alt="Become a partner">
+                    <span><a href="mailto:pl@houstontips.us" style="color:var(--primary-color);">Become a Partner</a></span>
+                </li>
+            </div>
+        </fieldset>
+
+    </form>
+
+{% endblock content %}
+
+{# Import footer #}
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock footer %}

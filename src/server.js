@@ -110,6 +110,30 @@ server.get("/search", (req, res) => {
 
 })
 
+server.get("/partners", (req, res) => {
+
+    // // req.query: they are the query strings from the url
+    // console.log(req.query)
+
+    return res.render("partners.html")
+})
+
+server.get("/terms-conditions", (req, res) => {
+
+    // // req.query: they are the query strings from the url
+    // console.log(req.query)
+
+    return res.render("terms-conditions.html")
+})
+
+server.get("/privacy-policy", (req, res) => {
+
+    // // req.query: they are the query strings from the url
+    // console.log(req.query)
+
+    return res.render("privacy-policy.html")
+})
+
 // Turn on server
 const PORT = process.env.PORT || 5000
 server.listen(PORT, () => {

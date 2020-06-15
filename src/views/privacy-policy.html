@@ -1,0 +1,38 @@
+{# Import layout template #}
+{% extends "layout.html" %}
+
+{# import body id #}
+{% set pageId = "page-create-point" %}
+
+{# import page title #}
+{% block title %}
+    <title>Register your company</title>
+{% endblock title %}
+
+{# Import styles #}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/info.css">
+{% endblock styles %}
+
+{# Import index content #}
+{% block content %}
+    {% include "partials/page-header.html" %}
+    
+    <div class="info">
+        <h1>Privacy Policy</h1>
+        
+        {# Import index termscond #}
+        {% block privacypol %}
+            {% include "partials/privacypol.html" %}
+        {% endblock privacypol %}      
+    
+    </div>        
+
+{% endblock content %}
+
+{# Import footer #}
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock footer %}

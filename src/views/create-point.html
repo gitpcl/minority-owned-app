@@ -155,6 +155,11 @@
 
 {% endblock content %}
 
+{# Import footer #}
+{% block footer %}
+    {% include "partials/footer.html" %}
+{% endblock footer %}
+
 {% block modal %}
     {% if saved %}
         {% include "partials/point-created.html"%}
@@ -166,3 +171,4 @@
 {% block scripts %}
     <script src="/scripts/create-point.js"></script>
 {% endblock scripts %}
+
