@@ -32,8 +32,9 @@ footer {
 }
 
 .inner-footer .logo-container img {
-    width:60%;
-    height:auto;
+    width: 50%;
+    height: 60px;
+    margin-left: 50px;
 }
 
 .inner-footer .footer-third {
@@ -58,7 +59,7 @@ footer {
 
 .inner-footer .footer-third a {
     font-family: 'Roboto', sans-serif;
-    font-size:18px;
+    font-size:15px;
     color:white;
     display: block;
     font-weight:200px;
