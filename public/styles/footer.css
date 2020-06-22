@@ -8,20 +8,29 @@
  *  ©2020 Pedro Lopes. All rights reserved.
  */
 
+.frame {
+    background-color: white;
+    margin: 80px auto;
+    padding: 64px;
+    border-radius: 8px;
+    max-width: 730px;
+    box-sizing: border-box;
+}
+
 footer {
     width:100vw;
     display:block;
     overflow:hidden;
     padding:70px 0;
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: #2A2828;
 }
 
 .inner-footer {
     display: flex;
     justify-content: space-between;
 
-    margin: auto 0;
+    margin: auto 20px;
     /* width: 1100px; */
     height:100%;
 }
@@ -80,5 +89,127 @@ footer {
     font-weight:200;
     display: block;
     width:100%;
+}
+
+.founder-content p {
+    margin-bottom:15px;
+}
+
+.partner-content p {
+    margin-bottom:15px;
+}
+
+
+/**** MEDIA *****/
+/* @media (max-width: 1000px) {
+} */
+
+/* @media (min-width: 1700px) {
+    .inner-footer {
+        margin: auto 20px;
+    }
+} */
+
+/* @media (max-height: 760px) {
+    .inner-footer {
+        margin: auto 20px;
+    }
+} */
+
+@media (max-width: 600px) {
+    .frame {
+        margin: 40px auto;
+    }
+
+    footer {
+        padding:10px 0;
+    }
+
+    .inner-footer {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        margin:20px;
+    }
+}
+
+/*Pixel 2, Pixel 2XL,*/
+@media (max-width: 414px) {
+    
+    .frame {
+        margin: 40px auto;
+    }
+
+    footer {
+        padding:10px 0;
+    }
+
+    .inner-footer {
+        display:block;
+        margin:50px;
+    }
+} 
+
+/*Pixel 2, Pixel 2XL,*/
+@media (max-width: 411px) {
+    .frame {
+        margin: 40px auto;
+    }
+
+    footer {
+        padding:10px 0;
+    }
+
+    .inner-footer {
+        display:block;
+        margin:15px;
+    }
+}
+
+/*iPhone6/7/8, iPhone X*/
+@media (max-width: 375px) {
+    .frame {
+        margin: 40px auto;
+    }
+
+    footer {
+        padding:10px 0;
+    }
+
+    .inner-footer {
+        display:block;
+        margin:15px;
+    }
+}
+
+/*MotoG4, GalaxyS5* */
+@media (max-width: 360px) {
+    .frame {
+        margin: 40px auto;
+    }
+
+    footer {
+        padding:10px 0;
+    }
+
+    .inner-footer {
+        display:block;
+        margin:15px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .frame {
+        margin: 40px auto;
+    }
+
+    footer {
+        padding:10px 0;
+    }
+
+    .inner-footer {
+        display:block;
+        margin:15px;
+    }
 }
 

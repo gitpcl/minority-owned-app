@@ -12,53 +12,53 @@
 {# Import styles #}
 {% block styles %}
     <link rel="stylesheet" href="/styles/create-point.css">
-    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/partner.css">
 {% endblock styles %}
 
 {# Import index content #}
 {% block content %}
     {% include "partials/page-header.html" %}
 
-    <form action="/savepoint" method="POST">
+    <div class="frame">
 
         <h1>Project Partners</h1>
 
-        <fieldset>
+        <div class="founder-content">
             <legend>
-                <h2>Project Founder</h2>
-                <span>made with ❤️ </span>
+                <h2>Founder</h2>
+                <p>made with ❤️ </p>
             </legend>
             <div class="items-grid">   
                 <li>
                     <img src="/assets/icones/houstontips.svg" alt="HoustonTips Logo">
-                    <span><a href="https://www.instagram.com/houstontips" style="color:var(--primary-color);">@houstontips</a></span>
+                    <a href="https://www.instagram.com/houstontips" style="color:var(--primary-color);">@houstontips</a>
                 </li>
             </div>
-        </fieldset>
+        </div>
 
-        <fieldset>
+        <div class="partner-content">
             <legend>
                 <h2>Partners</h2>
-                <span>Thank you for being a partner</span>
+                <p>Thank you for being a partner</p>
             </legend>
             <div class="items-grid">   
                 <li>
-                    <img src="/assets/icones/partner.svg" alt="Become a partner">
-                    <span><a href="mailto:pl@houstontips.us" style="color:var(--primary-color);">Become a Partner</a></span>
+                    <img src="/assets/icones/camabbas.svg" alt="Cameron Abbas Logo">
+                    <a href="https://www.instagram.com/cam_abbas" style="color:var(--primary-color);" >@cam_abbas</a>
                 </li>
                 <li>
                     <img src="/assets/icones/partner.svg" alt="Become a partner">
-                    <span><a href="mailto:pl@houstontips.us" style="color:var(--primary-color);">Become a Partner</a></span>
+                    <a href="mailto:pl@houstontips.us" style="color:var(--primary-color);">Become a Partner</a>
                 </li>
                 <li>
                     <img src="/assets/icones/partner.svg" alt="Become a partner">
-                    <span><a href="mailto:pl@houstontips.us" style="color:var(--primary-color);">Become a Partner</a></span>
+                    <a href="mailto:pl@houstontips.us" style="color:var(--primary-color);">Become a Partner</a>
                 </li>
             </div>
-        </fieldset>
+        </div>
         
 
-    </form>
+    </div>
 
 {% endblock content %}
 
