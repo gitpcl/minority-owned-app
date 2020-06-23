@@ -125,6 +125,10 @@ footer {
         padding:10px 0;
     }
 
+    .inner-footer .logo-container img {
+        width: 90%;
+    }
+
     .inner-footer {
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -143,6 +147,10 @@ footer {
         padding:10px 0;
     }
 
+    .inner-footer .logo-container img {
+        width: 90%;
+    }
+
     .inner-footer {
         display:block;
         margin:50px;
@@ -157,6 +165,10 @@ footer {
 
     footer {
         padding:10px 0;
+    }
+
+    .inner-footer .logo-container img {
+        width: 90%;
     }
 
     .inner-footer {
@@ -175,6 +187,10 @@ footer {
         padding:10px 0;
     }
 
+    .inner-footer .logo-container img {
+        width: 90%;
+    }
+
     .inner-footer {
         display:block;
         margin:15px;
@@ -191,6 +207,10 @@ footer {
         padding:10px 0;
     }
 
+    .inner-footer .logo-container img {
+        width: 90%;
+    }
+
     .inner-footer {
         display:block;
         margin:15px;
@@ -205,6 +225,10 @@ footer {
 
     footer {
         padding:10px 0;
+    }
+
+    .inner-footer .logo-container img {
+        width: 90%;
     }
 
     .inner-footer {
