@@ -52,8 +52,10 @@ server.post("/savepoint", (req, res) => {
             email,
             phone,
             social,
+            women,
+            type,
             items
-        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);
+        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);
     `
     const values = [
         req.body.image,
@@ -67,6 +69,8 @@ server.post("/savepoint", (req, res) => {
         req.body.email,
         req.body.phone,
         req.body.social,
+        req.body.women,
+        req.body.type,
         req.body.items
     ]
 
@@ -97,7 +101,8 @@ server.get("/search", (req, res) => {
     }
 
     // Get data from database
-    db.all(`SELECT * FROM places WHERE cep LIKE '%${search}%'`, function(err, rows) {
+    // insert WHERE cep LIKE between places '%${search}%
+    db.all(`SELECT * FROM places WHERE cep LIKE '%${search}%' OR type LIKE '%${search}%'`, function(err, rows) {
         if(err) {
             return console.log(err)
             }
@@ -135,7 +140,7 @@ server.get("/privacy-policy", (req, res) => {
 })
 
 // Turn on server
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
 server.listen(PORT, () => {
     console.log(`App server listening on PORT: ${PORT}`)
 })

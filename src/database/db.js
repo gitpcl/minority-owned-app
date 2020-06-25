@@ -8,7 +8,7 @@ const db = new sqlite3.Database("src/database/database.db")
 module.exports = db
 
 //Utilize the database object for our operations
-// db.serialize(() => {
+//db.serialize(() => {
 
     // // With SQL commands:
     // // 1. Criate a table
@@ -26,6 +26,8 @@ module.exports = db
     //         email TEXT,
     //         phone TEXT,
     //         social TEXT,
+    //         women TEXT,
+    //         type TEXT,
     //         items TEXT
     //     );
     // `)
@@ -44,8 +46,10 @@ module.exports = db
     //         email,
     //         phone,
     //         social,
+    //         women,
+    //         type,
     //         items
-    //     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);
+    //     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?);
     // `
     // const values = [
     //     "http://burgerco.com.br/wp-content/uploads/2013/07/IMG_8229-588x392.jpg",
@@ -59,6 +63,8 @@ module.exports = db
     //     "",
     //     "346-804-7208",
     //     "ate_boutique_kitchen",
+    //     "No",
+    //     "Restaurant",
     //     "Black Americans (African Decent)"
     // ]
 
@@ -73,7 +79,7 @@ module.exports = db
 
     // db.run(query, values, afterInsertData)
 
-    // // 3. Check data in the table
+    // 3. Check data in the table
     // db.all(`SELECT * FROM places`, function(err, rows) {
     //     if(err) {
     //         return console.log(err)
@@ -85,7 +91,7 @@ module.exports = db
 
     // 4. Delete data from the table
     // if remove WHERE id = ? it removes everything
-    // db.run(`DELETE FROM places WHERE id = ?`, [25], function(err) { 
+    // db.run(`DELETE FROM places WHERE id = ?`, [6], function(err) { 
     //     if(err) {
     //         return console.log(err)
     //     }

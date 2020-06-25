@@ -1,14 +1,14 @@
 <div id="modal" class="hide">
     <div class="content">
         <div class="header">
-            <h1>Select your ZipCode</h1>
+            <h1>Select one of the options</h1>
             <a href="">Close</a>
         </div>
         <form action="/search">
-            <label for="search">ZipCode</label>
+            <label for="search">Search by ZipCode</label>
             <div class="search field">
                 <select name="search">
-                    <option value="" disabled selected hidden>Type</option>
+                    <option value="" disabled selected hidden></option>
                     {# Import Houston CEPs #}
                     {% block cep %}
                         {% include "partials/houston-cep.html" %}
@@ -18,6 +18,21 @@
                     <img src="/assets/icones/search.svg" alt="Search">
                 </button>
             </div>
+            <h3>OR</h3>
+            <label for="search">Search by Type</label>
+            <div class="search field">
+                <select name="search">
+                    <option value="" disabled selected hidden></option>
+                    {# Import type #}
+                    {% block type %}
+                        {% include "partials/type.html" %}
+                    {% endblock type %}
+                </select>
+                <button>
+                    <img src="/assets/icones/search.svg" alt="Search">
+                </button> 
+            </div>
         </form>
+        
     </div>
 </div>

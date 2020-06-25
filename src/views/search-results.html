@@ -33,13 +33,14 @@
                         <img src="{{ place.image }}" alt="{{ place.name }}">
                         <h1>{{ place.name }}</h1>
                         <h5>{{ place.items }}</h5>
+                        <p>{{ place.type }} | Women Owned: {{ place.women }}</p>
                         <p>
                             {{ place.address }} {{ place.address2 }}<br>
-                            {{ place.city }}, {{ place.state }} {{ place.cep }}<br>
+                            {{ place.city }} {{ place.state }} {{ place.cep }}<br>
                             <a href="{{ place.site }}">{{ place.site }}</a><br>
                             <a href="mailto:{{ place.email }}">{{ place.email }}</a><br>
-                            Tel: <a href="tel:{{ place.phone }}">{{ place.phone }}</a><br>
-                            Siga no instagram: <a href="https://www.instagram.com/{{ place.social }}">@{{ place.social }}</a>
+                            <a href="tel:{{ place.phone }}">{{ place.phone }}</a><br>
+                            <a href="https://www.instagram.com/{{ place.social }}">{{ place.social }}</a>
                         </p>
                     </div>
 
@@ -53,4 +54,3 @@
 
     </main>
 {% endblock content %}
-

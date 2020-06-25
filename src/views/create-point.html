@@ -46,7 +46,7 @@
             <div class="field-group">
                 <div class="field">
                     <label for="address">Address</label>
-                    <input type="text" name="address" required="required">
+                    <input type="text" name="address">
                 </div>
             </div>
 
@@ -97,23 +97,42 @@
                     <label for="email">E-Mail</label>
                     <input 
                         type="email" 
-                        name="email" 
-                        placeholder="Your business email here"
-                        required="required">
+                        name="email">
                 </div>
             </div>
 
             <div class="field-group">
                 <div class="field">
                     <label for="phone">Phone</label>
-                <input type="text" name="phone" placeholder="(XXX) XXX-XXXX" required="required">
+                <input type="text" name="phone" placeholder="(XXX) XXX-XXXX">
                 </div>
                 <div class="field">
                     <label for="social">Instagram</label>
                     <input 
                         type="text" 
                         name="social" 
-                        placeholder="Your instagram handle w/o @">
+                        placeholder="Instagram handle WITHOUT @">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="women">Are you women owned?</label>
+                    <select name="women" required="required">
+                        <option value="">Select an option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="type">Type of business</label>
+                    <select name="type" required="required">
+                        <option selected="selected" value="">Select a type</option>
+                            {# Import type #}
+                            {% block type %}
+                                {% include "partials/type.html" %}
+                            {% endblock type %}
+                    </select>
                 </div>
             </div>
 
