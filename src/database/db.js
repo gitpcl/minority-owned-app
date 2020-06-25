@@ -8,7 +8,7 @@ const db = new sqlite3.Database("src/database/database.db")
 module.exports = db
 
 //Utilize the database object for our operations
-//db.serialize(() => {
+// db.serialize(() => {
 
     // // With SQL commands:
     // // 1. Criate a table
@@ -91,7 +91,7 @@ module.exports = db
 
     // 4. Delete data from the table
     // if remove WHERE id = ? it removes everything
-    // db.run(`DELETE FROM places WHERE id = ?`, [6], function(err) { 
+    // db.run(`DELETE FROM places WHERE id = ?`, [8], function(err) { 
     //     if(err) {
     //         return console.log(err)
     //     }

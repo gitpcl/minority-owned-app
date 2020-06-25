@@ -35,12 +35,12 @@
                         <h5>{{ place.items }}</h5>
                         <p>{{ place.type }} | Women Owned: {{ place.women }}</p>
                         <p>
-                            {{ place.address }} {{ place.address2 }}<br>
-                            {{ place.city }} {{ place.state }} {{ place.cep }}<br>
-                            <a href="{{ place.site }}">{{ place.site }}</a><br>
-                            <a href="mailto:{{ place.email }}">{{ place.email }}</a><br>
-                            <a href="tel:{{ place.phone }}">{{ place.phone }}</a><br>
-                            <a href="https://www.instagram.com/{{ place.social }}">{{ place.social }}</a>
+                            <div>{{ place.address }} {{ place.address2 }}</div>
+                            <div>{{ place.city }} {{ place.state }} {{ place.cep }}</div>
+                            <div><a href="{{ place.site }}">{{ place.site }}</a></div>
+                            <div><a href="mailto:{{ place.email }}">{{ place.email }}</a></div>
+                            <div><a href="tel:{{ place.phone }}">{{ place.phone }}</a></div>
+                            <div><a href="https://www.instagram.com/{{ place.social }}">{{ place.social }}</a></div>
                         </p>
                     </div>
 
