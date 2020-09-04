@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src=".github/hmo-logo.png" alt="Logo Houston Minority Owned" />
+    <img src=".github/hmo-logo.png" alt="Logo Houston Minority Owned" width="50%" />
 </h1>
 
 <h5 align="center">
