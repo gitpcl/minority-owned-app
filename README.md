@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src=".github/logo-hmo.svg" alt="Logo Houston Minority Owned" />
+    <img src=".github/logo-hmo.png" alt="Logo Houston Minority Owned" />
 </h1>
 
 <h5 align="center">
@@ -10,7 +10,7 @@
 
 ## :computer: About the project
 
-O Houston Minority Owned was developed with the intent to connect minority owned business in Houston to their local communities. 
+Houston Minority Owned was developed with the intent to connect minority owned business in Houston to their local communities. 
 
 ### :earth_americas: That way Houston becomes more inclusive!!!
 
@@ -26,7 +26,7 @@ O Houston Minority Owned was developed with the intent to connect minority owned
     $ npm start
 
 ##### 4. Open the browser on *URL*.
-    http://localhost:5000/
+    http://localhost:3000/
 
 ##### :grey_exclamation: Observation: the databsae already nas no business registered. In case you register a business and decide to clean the database, delete "database.db" file. After, run the command to create it again:
     $ npm run database
