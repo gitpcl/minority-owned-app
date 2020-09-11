@@ -57,11 +57,11 @@ body::after {
     display: flex;
 
     width: 20px;
-    height:20px;
+    height:24px;
 }
 
 main {
-    margin: 48px;
+    margin: 48px auto;
 }
 
 main h4 {
@@ -74,9 +74,11 @@ main h4 {
 
 main .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    
+    gap: 1.3em;
+    align-items: stretch;
+    
 }
 
 main .card img {
