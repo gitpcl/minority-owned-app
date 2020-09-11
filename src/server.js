@@ -10,6 +10,7 @@ mongoose.connect('mongodb+srv://hmosuperadmin:GPyaumW9JmGvAhl2@cluster0.erl3f.mo
     useUnifiedTopology: true,
     useNewUrlParser: true
 })
+
 mongoose.connection.once('open', () => console.log('DB is connected'))
 
 // Configure public pasta
@@ -42,15 +43,12 @@ server.get("/create-point", (req, res) => {
 })
 
 server.post("/savepoint", (req, res) => {
-    
+
     const dbPlace = req.body
     Places.create(dbPlace, (err, data) => {
         if(err) {
-            // res.status(500).send(err)
             console.log(err)
         } else { 
-            // res.status(201).send(data)
-
             return res.render("index.html")
         }
     })
@@ -66,17 +64,14 @@ server.get("/search", (req, res) => {
         return res.render("search-results.html", { total: 0 })
     }
 
-    // Get data from database
-    // insert WHERE cep LIKE between places '%${search}%
-    db.all(`SELECT * FROM places WHERE cep LIKE '%${search}%' OR type LIKE '%${search}%'`, function(err, rows) {
+    const query = { $or: [{ cep: search }, { type: search }] }
+
+    Places.find( query, (err, data) => {
         if(err) {
-            return console.log(err)
-            }
-
-            const total = rows.length
-
-            // show the html page with the data from the database
-            return res.render("search-results.html", { places: rows, total })
+            console.log(err)
+        } else {
+            return res.render("search-results.html", { places: data, total: data.length })
+        }
     })
 
 })
