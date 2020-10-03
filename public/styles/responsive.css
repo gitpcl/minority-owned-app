@@ -43,6 +43,10 @@
     #page-home {
         background-position-x: 35vw;
     }
+
+    #page-home main h1 {
+        font-size: 4vw;
+    }
 }
 
 @media (max-height: 760px) {
