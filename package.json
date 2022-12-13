@@ -10,7 +10,7 @@
   "author": "Pedro Lopes",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.10.4",
     "nunjucks": "^3.2.1",
     "per-env": "^1.0.2",
